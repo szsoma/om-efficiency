@@ -1,0 +1,1 @@
+{"version":3,"sources":["script.js"],"names":["$","document","ready","click","this","toggleClass"],"mappings":"AAAAA,EAAEC,UAAUC,MAAM,WACjBF,EAAE,aAAaG,MAAM,WACpBH,EAAEI,MAAMC,YAAY","file":"../script.js","sourcesContent":["$(document).ready(function(){\n\t$('#nav-anim').click(function(){\n\t\t$(this).toggleClass('open');\n\t});\n});"]}

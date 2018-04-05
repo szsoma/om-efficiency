@@ -11,8 +11,8 @@
     
     <link rel="stylesheet" type="text/css" href="https://www.optimonk.com/catalog/view/theme/optimonk/dest/css/global.css" media="screen" />
     <link rel="stylesheet" type="text/css" href="https://www.optimonk.com/custom/stylesheet/optimonk/optimonk.1522830586.0.1522830586.0.css" media="screen" />
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link href="web/css/style.css" rel="stylesheet">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -26,7 +26,7 @@
     <!-- NAV -->
 
     <nav class="efficiency-nav">
-      <ul>
+      <ul class="efficiency-menu">
         <li class="logo">
           <a href="#overall"><embed class="svg-image" src="img/logo.svg" type="image/svg+xml"></embed></a>
         </li>
@@ -38,31 +38,39 @@
           <a href="#"><embed class="svg-image" src="img/share.svg" type="image/svg+xml"></embed></a>
         </li>
       </ul>
-    </nav>
+    </nav> 
 
     <!-- BANNER -->
 
     <section class="banner">
       <div class="container">
-        <div class="row blueish">
+        <div class="row">
           <div class="banner-head col-xs-12 col-sm-12 col-md-12 col-lg-12">
             <h1 class="banner-title">Site efficiency grader</h1>
             <!-- dinamikus site nev  -->
-            <h2 class="site-name">photopaperdirect.com</h2>
+            <p class="site-name text-orange">photopaperdirect.com</p>
             <!-- dinamikus site ertek  -->
             <h2 class="site-value">49</h2>
+            <div class="result">
+              <ul class="result-ul">
+                <li>Poor</li>
+                <li>Weak</li>
+                <li>Average</li>
+                <li>Good</li>
+                <li>Excellent</li>
+              </ul>
+            </div>
             <div class="progress">
-              <div class="result">
-                <ul>
-                  <li>Poor</li>
-                  <li>Weak</li>
-                  <li>Average</li>
-                  <li>Good</li>
-                  <li>Excellent</li>
-                </ul>
-              </div>
               <div class="progress-bar w-75" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
             </div>
+            <!-- dinamikus site ertekeles  -->
+            <h3 class="your-store-value">Your store is <span class="site-text-value text-orange">Average</span></h3>
+            <div class="your-store-p">
+              <p>Your online store can be much better at engaging visitors.</p>
+              <p>Luckily, we found some easy wins to <span class="text-orange">take your website from average to excellent.</span></p>
+            </div>
+            <!-- dinamikus sajat website kep  -->
+            <img class="own-site-pic img-responsive" src="img/own-site-pic.jpg" alt="My site print screen">
           </div>
         </div>
       </div>
