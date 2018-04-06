@@ -24,25 +24,26 @@
   <body>
 
     <!-- NAV -->
-
-    <nav class="efficiency-nav">
-      <ul class="efficiency-menu text-uppercase">
-        <li class="logo">
-          <a href="#overall"><embed class="svg-image" src="img/logo.svg" type="image/svg+xml"></embed></a>
-        </li>
-        <li><a href="#overall">Overall</a></li>
-        <li><a href="#traffic">Traffic</a></li>
-        <li><a href="#on-site-behavior">On-site behavior</a></li>
-        <li><a href="#competitors">Competitors</a></li>
-        <li class="logo">
-          <a href="#"><embed class="svg-image" src="img/share.svg" type="image/svg+xml"></embed></a>
-        </li>
-      </ul>
-    </nav> 
+    <div class="container-fluid">
+      <nav class="efficiency-nav navbar-fixed-top">
+        <ul class="efficiency-menu text-uppercase">
+          <li class="logo">
+            <a href="#overall"><embed class="svg-image" src="img/logo.svg" type="image/svg+xml"></embed></a>
+          </li>
+          <li><a href="#overall">Overall</a></li>
+          <li><a href="#traffic">Traffic</a></li>
+          <li><a href="#on-site-behavior">On-site behavior</a></li>
+          <li><a href="#competitors">Competitors</a></li>
+          <li class="logo">
+            <a href="#"><embed class="svg-image" src="img/share.svg" type="image/svg+xml"></embed></a>
+          </li>
+        </ul>
+      </nav>
+    </div>
 
     <!-- BANNER -->
 
-    <section class="banner">
+    <section class="banner" id="overall">
       <div class="container">
         <div class="row">
           <div class="banner-head col-xs-12 col-sm-12 col-md-12 col-lg-12">
@@ -81,10 +82,12 @@
     <section class="content-header traffic-head" id="traffic">
       <div class="container">
         <div class="row">
-          <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-             <h4 class="content-header-title text-uppercase text-orange">Traffic</h4> 
-             <p class="content-header-subtitle">As an online store owner, "more customers" is probably the first desire on your wish list. And what's essential for acquiring more buyers?
-              <span class="text-orange"><b>More traffic to your site,</b></span> for sure...</p> 
+          <div class="module-head col-xs-12 col-sm-12 col-md-12 col-lg-12">
+             <h4 class="module-head-title text-uppercase text-orange">Traffic</h4>  
+          </div>
+          <div class="module-subtitle">
+            <p>As an online store owner, "more customers" is probably the first desire on your wish list. And what's essential for acquiring more buyers?
+            <span class="text-orange"><b>More traffic to your site,</b></span> for sure...</p>
           </div>
         </div>
       </div>
@@ -92,7 +95,33 @@
 
     <section class="traffic">
       <div class="container">
-        <div class="row">
+        <div class="row traffic-columns">
+
+          <!-- dinamikus website TRAFFIC ERTEKELES  -->
+
+          <div class="site-rating col-xs-12 col-sm-12 col-md-4 col-lg-4">
+            <embed class="svg-image" src="img/done.svg" type="image/svg+xml"></embed>
+            <h5 class="text-uppercase traffic-card-title">Total visits</h5>
+            <p class="traffic-card-p">Last month</p>
+            <h4 class="site-value-good">171.90K</h4>
+            <p class="traffic-card-p">Such a nice job! You have a massive website traffic.</p>
+          </div>
+
+          <div class="site-rating site-rating-middle col-xs-12 col-sm-12 col-md-4 col-lg-4">
+            <embed class="svg-image" src="img/done.svg" type="image/svg+xml"></embed>
+            <h5 class="text-uppercase traffic-card-title">Increase</h5>
+            <p class="traffic-card-p">Compared to previous month</p>
+            <h4 class="site-value-good">+81.85%</h4>
+            <p class="traffic-card-p">Very well done! Your traffic seems to be increasing.</p>
+          </div>
+
+          <div class="site-rating col-xs-12 col-sm-12 col-md-4 col-lg-4">
+            <embed class="svg-image" src="img/fail.svg" type="image/svg+xml"></embed>
+            <h5 class="text-uppercase traffic-card-title">Total visits</h5>
+            <p class="traffic-card-p">Last month</p>
+            <h4 class="site-value-good">171.90K</h4>
+            <p class="traffic-card-p">Such a nice job! You have a massive website traffic.</p>
+          </div>
 
         </div>
       </div>
