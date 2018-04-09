@@ -12,15 +12,11 @@ body {
     color: #6d6e70;
     text-align: center;
     background-color: #f5f5f5;
+    overflow-x: hidden;
 }
 
 .center-img {
     margin: auto
-}
-
-.text-sm-center,
-.text-xs-center {
-    text-align: center;
 }
 
 .container {
@@ -35,6 +31,10 @@ ul, ol {
 
 .text-orange {
     color: #f7931d;
+}
+
+.text-white {
+    color: #fff;
 }
 
 .site-value-bad {
@@ -202,7 +202,7 @@ ul, ol {
 }
 
 .site-rating + .site-rating {
-    border-top: solid 1px #394856;
+    border-top: 1px solid #394856;
 }
 
 
@@ -211,8 +211,8 @@ ul, ol {
 .money {
     padding: 4rem 2rem;
     background-color: #fff;
-    border-bottom: solid 2px #f7931d;
-    border-top: solid 2px #f7931d;
+    border-bottom: 2px solid #f7931d;
+    border-top: 2px solid #f7931d;
 }
 
 .map-head {
@@ -223,13 +223,123 @@ ul, ol {
     padding: 4rem 0;
 }
 
-/*   On-site-head  ------------------------------ */
+/*   Competitors  ------------------------------ */
+
+.competitor-screens {
+    padding: 4rem;
+}
 
 
+/*   Recover these competitors  ------------------------------ */
 
+.blue-bg {
+    background-color: #353f4e;
+    height: 100%;
+}
 
+.inverse-module-head {
+    &:before {
+        position: absolute;
+        content:'';
+        width: 100%;
+        height: 24px;
+        z-index: 1;
+        top: 8rem;
+        background: repeating-linear-gradient(
+            -45deg,
+            #f7931d,
+            #f7931d 2px,
+            #353f4e 2px,
+            #353f4e 9px
+        );
+    }
+}
 
+.inverse-module-head-title {
+    background-color: #353f4e;
+    text-shadow: 1.5px 2.6px 0 rgba(0, 0, 0, 0.25);
+}
 
+.recover p {
+    color: #fff;
+}
+
+.competitor-screen {
+    box-shadow: 4.1px 6.9px 10px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+}
+
+.table-wrap {
+    margin: auto 1rem;
+}
+
+.advice-table {
+    margin: auto;
+    border-collapse: separate;
+}
+
+tr td{
+    padding: 1rem 3rem;
+    border-bottom: 1px solid #777
+}
+
+th {
+    opacity: .6;
+    font-weight: 400;
+    text-transform: uppercase;
+    padding: 0 3rem;
+}
+
+/*   ORG  ------------------------------ */
+
+.ebook-pic {
+}
+
+.ebook-pic ul {
+    margin: 4rem;
+    list-style: none;
+}
+
+.ebook-pic li {
+    padding: 3rem 0 3rem 5.5rem;
+    font-size: 2.5rem;
+    text-shadow: 0.5px 0.9px 0 rgba(0, 0, 0, 0.25);
+    &:before {
+        content: url('/img/done.svg');
+        position: absolute;
+        left: 0;
+        margin-top: -1.5rem;
+        margin-left: 4rem;
+    }
+}
+
+.ebook-download-btn {
+    margin-top: 10rem;
+    margin-bottom: 6rem;
+}
+.ebook-download-btn a {
+    margin-left: 4rem;
+    color: #f7931d;
+    border: 2px solid #f7931d;
+    padding: 3rem 5rem;
+    font-size: 3rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    &:hover {
+        background-color: #f7931d;
+        color: #fff;
+    }
+}
+
+/*   Footer  ------------------------------ */
+
+footer {
+    background-color: #283139;
+}
+
+.footer-p {
+    font-size: 1.4rem;
+}
 
 
 
@@ -291,7 +401,7 @@ ul, ol {
     }
 
     .site-rating + .site-rating {
-        border-left: solid 1px #394856;
+        border-left: 1px solid #394856;
         border-top: none;
     }
 
@@ -340,14 +450,13 @@ ul, ol {
     }
 
     .site-rating + .site-rating {
-        border-left: solid 1px #394856;
+        border-left: 1px solid #394856;
         border-top: none;
     }
 
     /*   Money background styles  ------------------------------ */  
     
     .money {
-        /* box-shadow: 3.1px 5.1px 21px 0 rgba(175, 100, 12, 0.25); */
         position: relative;
         &:before {
             position: absolute;
@@ -385,5 +494,49 @@ ul, ol {
             z-index: -1;
         }
         
+    }
+
+    /*   Recover these competitors  ------------------------------ */
+
+    .competitor-foot, .competitor-screens {
+        color: #fff;
+    }
+
+    /*   ORG  ------------------------------ */
+
+    .ebook-pic {
+        margin: 0;
+    }
+    .ebook-pic li {
+        padding: 1.4rem 0 1.4rem 5.5rem;
+        font-size: 2rem;
+    }
+    .ebook-pic li:before {
+        margin-top: -0.5rem;
+    }
+
+    .ebook-download-btn {
+        margin-top: 2rem;
+    }
+    .ebook-download-btn a { 
+        color: #f7931d;
+        border: 2px solid #f7931d;
+        padding: 1.6rem 6rem;
+        font-size: 2.4rem;
+        text-transform: uppercase;
+        text-decoration: none;
+        &:hover {
+            background-color: #f7931d;
+            color: #fff;
+        }
+    }
+
+    .foot-bg {
+        background-color: #353f4e;
+        width: 100%;
+        height: 300px;
+        position: absolute;
+        margin-top: -30rem;
+        z-index: -1;
     }
 }
