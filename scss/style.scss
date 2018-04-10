@@ -106,8 +106,22 @@ ul, ol {
     text-shadow: 1.5px 2.6px 0 rgba(0, 0, 0, 0.25);
 } 
 
+
+/*   Banner  ------------------------------ */
+
+.result-ul li{
+    display: inline;
+    padding: 2rem 3.2rem;
+}
+
+/* Progress bar */
+
 .progress {
-    height: 10px;
+    height: 8px;
+}
+
+.progress-bar {
+    background-color: #f7931d;
 }
 
 .your-store-value {
@@ -128,12 +142,6 @@ ul, ol {
 
 .own-site-pic {
     box-shadow: 3.1px 5.1px 21px 0 rgba(175, 100, 12, 0.25);
-}
-
-/*   Progress bar   */
-
-.result-ul li{
-    display: inline-block;
 }
 
 /*   Taffic Section  ------------------------------ */
@@ -275,12 +283,15 @@ ul, ol {
 
 .advice-table {
     margin: auto;
-    border-collapse: separate;
+    border-collapse: collapse;
+}
+
+tr:not(:last-child) {
+    border-bottom: 1px solid #777;
 }
 
 tr td{
     padding: 1rem 3rem;
-    border-bottom: 1px solid #777
 }
 
 th {
@@ -291,9 +302,6 @@ th {
 }
 
 /*   ORG  ------------------------------ */
-
-.ebook-pic {
-}
 
 .ebook-pic ul {
     margin: 4rem;
@@ -316,19 +324,19 @@ th {
 .ebook-download-btn {
     margin-top: 10rem;
     margin-bottom: 6rem;
-}
-.ebook-download-btn a {
-    margin-left: 4rem;
-    color: #f7931d;
-    border: 2px solid #f7931d;
-    padding: 3rem 5rem;
-    font-size: 3rem;
-    text-transform: uppercase;
-    text-decoration: none;
-    &:hover {
-        background-color: #f7931d;
-        color: #fff;
-    }
+    a {
+        margin-left: 4rem;
+        color: #f7931d;
+        border: 2px solid #f7931d;
+        border-radius: 3px;
+        padding: 3rem 5rem;
+        font-size: 3rem;
+        text-transform: uppercase;
+        text-decoration: none;
+        &:hover {
+            background-color: #f7931d;
+            color: #fff;
+        }
 }
 
 /*   Footer  ------------------------------ */
@@ -339,6 +347,7 @@ footer {
 
 .footer-p {
     font-size: 1.4rem;
+    margin: 0 auto;
 }
 
 
@@ -375,12 +384,35 @@ footer {
         font-size: 8px;
     }
 
+    .inverse-module-head-title {
+        padding: 3rem 3rem;
+        background-color: #353f4e;
+        text-shadow: 1.5px 2.6px 0 rgba(0, 0, 0, 0.25);
+    }
 
 }
 
 @media screen and ( min-width: 992px ){
     html {
         font-size: 8px;
+    }
+    /*   Menu  ------------------------------ */
+
+    .efficiency-menu {
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+        li {
+            display: inline;
+            padding: 0 3rem;
+            font-size: 2.2rem;
+        }
+    }
+
+    /*   Banner  ------------------------------ */    
+
+    .banner {
+        margin-top: 80px;
+        height: 840px;
     }
 
     /*   Traffic  ------------------------------ */    
@@ -403,6 +435,92 @@ footer {
     .site-rating + .site-rating {
         border-left: 1px solid #394856;
         border-top: none;
+    }
+
+    /*   Money background styles  ------------------------------ */  
+
+    .money {
+        position: relative;
+        &:before {
+            position: absolute;
+            content: '';
+            height: 40px;
+            width: 2px;
+            background-color: #f7931d;
+            left: 0;
+            top:0;
+        }
+
+        &:after {
+            position: absolute;
+            content: '';
+            height: 40px;
+            width: 2px;
+            background-color: #f7931d;
+            right: 0;
+            top:0;
+        }
+    }
+
+    .white-bg {
+        position: relative;
+    }
+    .money-bg {
+        &:before {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 1260px;
+            background-color: #ffffff;
+            left: 0;
+            margin-top: -150rem;
+            z-index: -1;
+        }
+        
+    }
+
+    /*   Recover these competitors  ------------------------------ */
+
+    .competitor-foot, .competitor-screens {
+        color: #fff;
+    }
+
+    /*   ORG  ------------------------------ */
+
+    .ebook-pic {
+        margin: 0;
+    }
+    .ebook-pic li {
+        padding: 1.4rem 0 1.4rem 5.5rem;
+        font-size: 2rem;
+    }
+    .ebook-pic li:before {
+        margin-top: -0.5rem;
+    }
+
+    .ebook-download-btn {
+        margin-top: 2rem;
+    }
+    .ebook-download-btn a { 
+        color: #f7931d;
+        border: 2px solid #f7931d;
+        padding: 1.6rem 6rem;
+        font-size: 2.4rem;
+        text-transform: uppercase;
+        text-decoration: none;
+        &:hover {
+            background-color: #f7931d;
+            color: #fff;
+        }
+    }
+
+    .foot-bg {
+        background-color: #353f4e;
+        width: 100%;
+        height: 300px;
+        position: absolute;
+        margin-top: -30rem;
+        z-index: -1;
     }
 
 }
