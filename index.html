@@ -23,10 +23,21 @@
   </head>
   <body>
 
-    <!-- NAV -->
-    <div class="container-fluid">
-      <nav class="efficiency-nav navbar-fixed-top">
-        <ul class="efficiency-menu text-uppercase">
+      
+<!--       <header class="header" id="overall">
+          <div class="topnav" id="myTopnav">
+              <a class="active" href="#overall"><embed class="svg-image" src="img/logo.svg" type="image/svg+xml"></embed></a>
+              <a href="#overall">Overall</a>
+              <a href="#traffic">Traffic</a>
+              <a href="#on-site-behavior">On-site behavior</a>
+              <a href="#competitors">Competitors</a>
+              <a href="#"><embed class="svg-image" src="img/share.svg" type="image/svg+xml"></embed></a>
+              <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+            </div>            
+      </header> -->
+<div class="container" id="overall">
+    <nav class="efficiency-nav navbar-fixed-top">
+        <ul class="efficiency-menu topnav text-uppercase" id="myTopnav">
           <li class="logo">
             <a href="#overall"><embed class="svg-image" src="img/logo.svg" type="image/svg+xml"></embed></a>
           </li>
@@ -34,16 +45,17 @@
           <li><a href="#traffic">Traffic</a></li>
           <li><a href="#on-site-behavior">On-site behavior</a></li>
           <li><a href="#competitors">Competitors</a></li>
-          <li class="logo">
+          <li>
             <a href="#"><embed class="svg-image" src="img/share.svg" type="image/svg+xml"></embed></a>
           </li>
+          <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
         </ul>
       </nav>
     </div>
 
     <!-- BANNER -->
 
-    <section class="banner" id="overall">
+    <section class="banner">
       <div class="container">
         <div class="row">
           <div class="banner-head col-xs-12 col-sm-12 col-md-12 col-lg-12">
@@ -53,10 +65,10 @@
             <!-- dinamikus site ertek  -->
             <h2 class="site-value">49</h2>
             <div class="result">
-              <ul class="result-ul">
+              <ul class="result-ul text-uppercase">
                 <li>Poor</li>
                 <li>Weak</li>
-                <li>Average</li>
+                <li class="active-result">Average</li>
                 <li>Good</li>
                 <li>Excellent</li>
               </ul>
@@ -72,7 +84,7 @@
               <p>Luckily, we found some easy wins to <span class="text-orange">take your website from average to excellent.</span></p>
             </div>
             <!-- dinamikus sajat website kep  -->
-            <img class="center-img own-site-pic img-responsive" src="img/own-site-pic.jpg" alt="My site print screen">
+            <img id="traffic" class="center-img own-site-pic img-responsive" src="img/own-site-pic.jpg" alt="My site print screen">
           </div>
         </div>
       </div>
@@ -81,7 +93,7 @@
     <!-- TRAFFIC -->   
 
     <section class="traffic">
-      <div class="container" id="traffic">
+      <div class="container">
         <div class="row content-header traffic-head">
           <div class="module-head col-xs-12 col-sm-12 col-md-12 col-lg-12">
               <h4 class="module-head-title text-uppercase text-orange">Traffic</h4>  
@@ -203,7 +215,7 @@
         </div>
 
         <div class="row module-foot">
-          <div class="module-subtitle">
+          <div class="module-subtitle" id="on-site-behavior">
               <p>In order to take your website to the next level, let's see <br>
               <span class="text-orange"><b>what are your visitors doing in your store.</b></span></p>
             </div>
@@ -218,7 +230,7 @@
 <!-- ON-SITE BEHAVIOR -->
 
     <section class="on-site">
-      <div class="container" id="on-site-behavior">
+      <div class="container">
         <div class="row content-header on-site-head">
           <div class="module-head col-xs-12 col-sm-12 col-md-12 col-lg-12">
               <h4 class="module-head-title text-uppercase text-orange">On-site behavior</h4>  
@@ -262,7 +274,7 @@
         </div>
 
         <div class="row module-foot">
-          <div class="module-subtitle">
+          <div class="module-subtitle" id="competitors">
               <p>So <span class="text-orange"><b>51 visitors out of 100</b></span> - who are interested in Photography - will <span class="text-orange"><b>go to your competitors</b></span> and buy there...</p>
             </div>
         </div>
@@ -273,7 +285,7 @@
 <!-- Competitors -->
 
     <section class="competitors">
-      <div class="container" id="competitors">
+      <div class="container">
         
         <div class="row content-header competitors-head">
           <div class="module-head col-xs-12 col-sm-12 col-md-12 col-lg-12">
@@ -410,5 +422,15 @@
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
     <script src="js/script.js"></script>
+    <script>
+      function myFunction() {
+          var x = document.getElementById("myTopnav");
+          if (x.className === "topnav") {
+              x.className += " responsive";
+          } else {
+              x.className = "topnav";
+          }
+      }
+    </script>
   </body>
 </html>
